@@ -10,8 +10,8 @@ def load_model():
 
 model = load_model()
 
-st.title("🔍 YOLOv8 Object Detection (CPU - Streamlit App)")
-st.write("Upload a image below  and see detected traffic sign objects using your custom model.")
+st.title("🔍 YOLOv8 Traffic Sign Recognition (CPU - Streamlit App)")
+st.write("Upload a image below  and see what traffic sign it is using our custom model.")
 
 uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
