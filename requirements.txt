@@ -3,6 +3,6 @@ ultralytics>=8.0.0
 torch
 torchvision
 torchaudio
-opencv-python
+opencv-python-headless==4.5.4.60
 Pillow
 numpy>=1.24.1
