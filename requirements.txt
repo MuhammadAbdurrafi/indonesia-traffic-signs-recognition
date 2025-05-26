@@ -5,4 +5,4 @@ torchvision
 torchaudio
 opencv-python-headless==4.5.4.60
 Pillow
-numpy>=1.24.1
+numpy
