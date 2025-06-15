@@ -21,7 +21,7 @@ if uploaded_file is not None:
     # Optional resize to 416x416 for speed (if not already)
     image_resized = image.resize((416, 416))
     
-    st.image(image_resized, caption="Uploaded Image (416x416)", use_column_width=True)
+    st.image(image_resized, caption="Uploaded Image (416x416)", use_container_width=True)
 
     with st.spinner("Running detection..."):
         # img_np = np.array(image_resized)
@@ -29,7 +29,7 @@ if uploaded_file is not None:
         # force CPU
         annotated_img = results[0].plot()  # get numpy array with bounding boxes
 
-        st.image(annotated_img, caption="Detected Objects", use_column_width=True)
+        st.image(annotated_img, caption="Detected Objects", use_container_width=True)
 
         # Optional: show labels and confidences
         st.subheader("📋 Detected Classes")
